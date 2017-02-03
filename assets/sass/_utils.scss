@@ -1,0 +1,31 @@
+.u-container{
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+
+	@include MQ(S){
+		max-width: 750px;
+	}
+
+	@include MQ(M){
+		max-width: 970px;
+	}
+
+	@include MQ(L){
+		max-width: 1280px;
+	}
+
+	.u-md-6{
+		@include MQ(M){
+			float: left;
+			margin: 0 15px;
+			width: calc(50% - 30px);
+		}
+	}
+}
+
+
+.u-border{
+	border-radius: 50%;
+	border: 2px dotted white;
+}
